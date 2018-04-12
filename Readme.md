@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Karina Dmytrinko](https://up.htmlacademy.ru/adaptive/14/user/664073).
-* Наставник: `Неизвестно`.
+* Наставник: Мурат Баркинхоев.
 
 ---
 
