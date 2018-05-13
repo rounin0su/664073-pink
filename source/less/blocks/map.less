@@ -1,0 +1,47 @@
+.map {
+  margin: 0 auto;
+  background-color: aqua;
+
+  &::before {
+    content: "";
+    display: block;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 35px solid #ffffff;
+  }
+}
+
+.map__img {
+	width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: 620px;
+
+    &::before {
+      border-left: 310px solid transparent;
+      border-right: 310px solid transparent;
+      border-top: 65px solid #ffffff;
+    }
+  }
+  .map__img {
+	width: 620px;
+	  height: 306px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 940px;
+
+    &::before {
+      border-left: 470px solid transparent;
+      border-right: 470px solid transparent;
+      border-top: 105px solid #ffffff;
+    }
+  }
+  .map__img {
+	width: 940px;
+  }	
+}

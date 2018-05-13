@@ -1,11 +1,37 @@
 .share-u-story {
-  padding: 50px 0;
-  background-color: #ffffff;
+  padding: 45px 20px 35px 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .share-u-story__intro {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  color: #283645;
+  line-height: 30px;
+}
+
+.share-u-story__fill-form {
+	display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .share-u-story {
+    width: 490px;
+	  padding: 90px 85px 75px 85px;
+  }
+	.share-u-story__intro {
+		margin-bottom: 4px;
+		font-size: 18px;
+	}
+	.share-u-story__fill-form {
+		display: block;
+		margin: 0;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+  .share-u-story {
+    width: 800px;
+	  padding-bottom: 80px;
+  }
 }

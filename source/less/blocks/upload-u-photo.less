@@ -1,11 +1,28 @@
 .upload-u-photo {
-  padding: 50px 0;
-  background-color: #ffffff;
+  padding: 19px 30px 42px 30px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .upload-u-photo__intro {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  color: #283645;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .upload-u-photo {
+    width: 421px;
+    padding: 46px 118px 70px 120px;
+  }
+  .upload-u-photo__intro {
+	font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload-u-photo {
+    width: 940px;
+	 padding-top: 5px;
+	 padding-bottom: 45px;
+  }
 }

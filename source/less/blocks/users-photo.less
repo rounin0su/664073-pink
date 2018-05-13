@@ -1,3 +1,25 @@
 .users-photo {
-  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.users-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__wrapper {
+    width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__wrapper {
+    width: 940px;
+  }
 }

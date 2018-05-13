@@ -1,13 +1,158 @@
 .btn {
   display: block;
+  border: 3px solid #ffffff;
+  border-radius: 35px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.btn-download {
-  margin-bottom: 30px;
-  padding: 15px 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+.btn--download {
+  margin: 0 0 30px 0;
+  padding: 10px 30px 15px 30px;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.btn--post {
+  margin-bottom: 10px;
+  padding: 15px 70px 15px 65px;
+  border: 3px solid #d22856;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #d22856;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn--cancel {
+  padding: 15px 70px 15px 65px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #b5b9be;
+  }
+}
+
+.btn--submit {
+  width: 100%;
+  margin-bottom: 37px;
+  padding: 13px 45px 18px 45px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.btn--ok-pop {
+	width: 100%;
+	padding: 23px 0;
+	background-color: #2aab6d;
+	border-radius: 10px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn--close-pop {
+	display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .btn--post {
+    margin-bottom: 25px;
+  }
+
+  .btn--submit {
+    width: 300px; //margin-bottom: 0;
+  }
+	.btn--download {
+		margin-bottom: 44px;
+	}
+	.btn--close-pop {
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+		padding: 23px 0;
+		background-color: #2aab6d;
+	    border-radius: 10px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		color: #ffffff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: @desktop-width) {
+  .btn--post {
+    margin-right: 45px;
+    margin-bottom: 0;
+    padding: 15px 40px;
+  }
+
+  .btn--cancel {
+    padding: 15px 52px;
+  }
+	.btn--ok-pop {
+		width: 320px;
+		margin: 0 auto;
+	}
+	.btn--close-pop {
+		width: 460px;
+	}
+	.btn--download {
+		font-size: 21px;
+    padding-left: 0px;
+    padding-right: 0px;
+		margin-bottom: 65px;
+	}
 }

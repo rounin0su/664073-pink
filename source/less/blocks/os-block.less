@@ -1,7 +1,16 @@
 .os-block {
-  margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 11px;
+  padding: 0 36px;
 }
-
-.os-block__item {
-  margin-right: 30px;
+@media (min-width: @tablet-width) {
+	.os-block {
+		    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 25px;
+	}	
+}
+@media (min-width: @desktop-width) {
+	.os-block {margin-bottom: 44px;}
+	    
 }

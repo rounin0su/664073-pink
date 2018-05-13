@@ -3,170 +3,294 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="http://placehold.it/150x100" alt="Pink">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Html Academy</a>
-          </li>
-        </ul>
+    <div class="page-header__top">
+      <div class="page-header__top-wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg" width="150" height="40">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" width="150" height="40">
+              <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="#">Html Academy</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <div class="page-header__intro">
+      <div class="page-header__intro-wrapper">
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
-    <div class="page-main__title-wrapper">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-    </div>
     <div class="look-photo">
       <!--h2 class="advantages__title"></h2-->
-      <p class="look-photo__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="look-photo__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
     </div>
     <div class="users-photo">
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Анна <span class="users-time">(5 минут назад)</span></span>
-          <p class="users-photo-item__desc desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a href="#" class="users-photo-item__desc like">
-            <i class="like__icon" title="Нравится"></i>
-            <span class="like__link">Нравится:</span>
-            <span class="like__count">215</span>
+      <div class="panorama">
+        <a href="#" class="panorama__link">
+          <div class="panorama__label-day">Панорама дня</div>
+			<picture>
+		      <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg"srcset="panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg" srcset="img/panorama-tablet@2x.jpg 2x">
+			  <img class="panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Users Photo">	
+			</picture>
+        </a>
+        <div class="panorama__desc">
+          <p class="panorama__text">
+            <span class="panorama__user-name">Анна <span class="panorama__users-time">(5 минут назад)</span></span>
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a href="#" class="panorama__link-like">
+              <i class="panorama__like-icon" title="Нравится"></i>
+              <span class="panorama__like-text">Нравится:</span>
+              <span class="panorama__like-count">215</span>
+            </a>
+        </div>
+      </div>
+      <div class="users-photo__wrapper">
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg"srcset="photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg" srcset="img/photo-car-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          
           </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Левон <span class="users-photo-item__users-time">(5 часов назад)</span></span>
+            <p class="users-photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">356</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Левон <span class="users-time">(5 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">356</span>
-</a>
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg"srcset="photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg" srcset="img/photo-drumset-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Антон <span class="users-photo-item__users-time">(12 часов назад)</span></span>
+            <p class="users-photo-item__text">Соседи будут рады!</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">666</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Антон <span class="users-time">(12 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Соседи будут рады!</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">666</span>
-</a>
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg"srcset="photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg" srcset="img/photo-window-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Борис <span class="users-photo-item__users-time">(20 часов назад)</span></span>
+            <p class="users-photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">215</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Борис <span class="users-time">(20 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">215</span>
-</a>
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg"srcset="img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg" srcset="img/photo-fair-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Сергей <span class="users-photo-item__users-time">(25 часов назад)</span></span>
+            <p class="users-photo-item__text">Самая кубанская в мире!</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">4</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Сергей <span class="users-time">(25 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Самая кубанская в мире!</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">4</span>
-</a>
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			  	<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg"srcset="img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg" srcset="img/photo-pov-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Максим <span class="users-photo-item__users-time">(40 часов назад)</span></span>
+            <p class="users-photo-item__text">Где снег-то?</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">150</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Максим <span class="users-time">(40 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Где снег-то?</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">150</span>
-</a>
-        </div>
-      </div>
-      <div class="users-photo-item">
-        <a href="#" class="users-photo-item__link"><img class="users-photo-item__img" src="http://placehold.it/150x100" alt="Users Photo"></a>
-        <div class="users-photo-item__desc">
-          <span class="users-photo-item__desc users-name">Надежда <span class="users-time">(45 часов назад)</span></span>
-          <p class="users-photo-item__desc desc">Всем GM и взаимные лайки!</p>
-          <a href="#" class="users-photo-item__desc like">
-          <i class="like__icon" title="Нравится"></i>
-          <span class="like__link">Нравится:</span>
-          <span class="like__count">2560</span>
-</a>
+        <div class="users-photo-item">
+          <a href="#" class="users-photo-item__link">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg"srcset="img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg" srcset="img/photo-wing-tablet@2x.jpg 2x">
+			  	<img class="users-photo-item__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Users Photo">
+			  </picture>
+          </a>
+          <div class="users-photo-item__desc">
+            <span class="users-photo-item__users-name">Надежда <span class="users-photo-item__users-time">(45 часов назад)</span></span>
+            <p class="users-photo-item__text">Всем GM и взаимные лайки!</p>
+            <a href="#" class="users-photo-item__link-like">
+              <i class="users-photo-item__like-icon" title="Нравится"></i>
+              <span class="users-photo-item__like-text">Нравится:</span>
+              <span class="users-photo-item__like-count">2560</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="upload-u-photo">
-      <p class="upload-u-photo__intro">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="upload-u-photo__intro">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <form class="upload-photo" action="https://echo.htmlacademy.ru" method="post">
-      <img class="upload-photo__img" src="http://placehold.it/150x100" alt="Your photo">
-      <div class="upload-photo__settings">
-        <div class="upload-photo__settings crop">Crop</div>
-        <div class="upload-photo__settings fill">Fill</div>
-        <div class="upload-photo__settings contrast" type="button">Contrast</div>
+    <div class="upload-photo">
+      <div class="upload-photo__wrapper">
+        <form class="upload-photo__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="upload-photo__img-wrapper">
+			  <picture>
+			    <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg"srcset="img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg" srcset="img/photo-road-tablet@2x.jpg 2x">
+			  	<img class="upload-photo__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Your photo">
+			  </picture>
+          </div>
+          <div class="upload-photo__settings-wrapper">
+            <div class="upload-photo__settings">
+              <div class="upload-photo__settings-item">
+				  <picture class="upload-photo__settings-icon-crop">
+				    <source media="(min-width: 1200px)" srcset="img/icon-editor-crop.svg" width="43" height="43">
+                    <source media="(min-width: 660px)" srcset="img/icon-editor-crop.svg" width="22" height="22">
+				  	<img width="44" height="44" src="img/icon-editor-crop.svg" alt="Crop">
+				  </picture>
+                <div class="scale-bar scale-bar--scale">
+                  <span class="toggle-bar toggle-bar--crop"></span>
+                </div>
+              </div>
+              <hr class="upload-photo__hr upload-photo__hr--scale">
+              <div class="upload-photo__settings-item">
+				  <picture class="upload-photo__settings-icon-fill">
+				  	<source media="(min-width: 1200px)" srcset="img/icon-editor-fill.svg" width="48" height="43">
+                    <source media="(min-width: 660px)" srcset="img/icon-editor-fill.svg" width="23" height="22">
+				  	<img width="48" height="44" src="img/icon-editor-fill.svg" alt="Fill">
+				  </picture>
+                <div class="scale-bar scale-bar--fill">
+                  <span class="toggle-bar toggle-bar--fill"></span>
+                </div>
+              </div>
+              <hr class="upload-photo__hr upload-photo__hr--fill">
+              <div class="upload-photo__settings-item">
+				  <picture class="upload-photo__settings-icon-contrast">
+				    <source media="(min-width: 1200px)" srcset="img/icon-editor-contrast.svg" width="32" height="32">
+                    <source media="(min-width: 660px)" srcset="img/icon-editor-contrast.svg" width="16" height="16">
+				  	<img width="32" height="32" src="img/icon-editor-contrast.svg" alt="Contrast">
+				  </picture>
+                <div class="scale-bar scale-bar--contrast">
+                  <span class="toggle-bar toggle-bar--contrast"></span>
+                </div>
+              </div>
+              <hr class="upload-photo__hr upload-photo__hr--contrast">
+            </div>
+            <div class="scale-bar scale-bar--mob">
+              <span class="toggle-bar toggle-bar--mob"></span>
+            </div>
+            <hr class="upload-photo__hr-mob">
+            <div class="upload-photo-btn__wrapper">
+              <button class="btn btn--post" type="submit">Запостить</button>
+              <button class="btn btn--cancel" type="reset">Отмена</button>
+            </div>
+          </div>
+        </form>
       </div>
-      <a href="#" class="upload-photo__scale">Scale</a>
-      <button class="btn btn-post" type="submit">Запостить</button>
-      <button class="btn btn-cancel" type="reset">Отмена</button>
-    </form>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#">
-      <img class="page-footer__logo-img" src="http://placehold.it/150x100" alt="Pink">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="">twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="">facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="">youtube</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="#">
-      <img class="copyright__link-img" src="http://placehold.it/150x100" alt="Html Academy">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg" width="150" height="40">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg" width="150" height="40">
+          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Pink">
+        </picture>
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+	      <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-htmlacademy.svg" width="27" height="35">
+            <source media="(min-width: 660px)" srcset="img/logo-htmlacademy.svg" width="27" height="35">	      
+	      	<img class="copyright__link-img" src="img/logo-htmlacademy.svg" width="27" height="35" alt="Html Academy">
+	      </picture>
+        </a>
+      </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

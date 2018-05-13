@@ -1,0 +1,53 @@
+.toggle-bar {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  position: absolute;
+  top: -7px;
+
+  &--mob {
+    right: 34px;
+  }
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .toggle-bar {
+	  width: 10px;
+	  height: 10px;
+    &--crop {
+      right: 55px;
+    }
+
+    &--fill {
+      left: 12px;
+    }
+
+    &--contrast {
+      left: 83px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .toggle-bar {
+    &--crop {
+      right: 232px;
+    }
+
+    &--fill {
+      left: 217px;
+    }
+
+    &--contrast {
+      left: 130px;
+    }
+  }
+}

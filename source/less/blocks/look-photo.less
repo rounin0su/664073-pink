@@ -1,11 +1,28 @@
 .look-photo {
-  background-color: #ffffff;
-  padding: 50px 0;
+  padding: 45px 20px 49px 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .look-photo__intro {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  color: #283645;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .look-photo {
+    width: 620px;
+    padding: 90px 20px 76px 20px;
+  }
+  .look-photo__intro {
+	padding: 0 90px;
+	font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .look-photo {
+    width: 940px;
+    padding: 91px 80px 88px 80px;
+  }
 }
